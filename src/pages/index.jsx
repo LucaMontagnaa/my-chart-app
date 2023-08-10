@@ -1,12 +1,16 @@
 import React from 'react';
-import Default from './LineChart.jsx'
-
+import Temperatura from './LineChartTemperatura.jsx'
+import Humedad from './LineChartHumedad'
 
 export default function Example() {
   return (
-    <div>
-      <Default></Default>
-    </div>
+    <>
+      <div>
+        <Temperatura />
+        <Humedad />
+      </div>
+    </>
   )
 }
+
 
