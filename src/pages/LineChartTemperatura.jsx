@@ -21,7 +21,7 @@ function Temperatura() {
   return (
     <>
       {/* line chart */}
-      <div className="w-[500px] h-screen mx-auto my-auto absolute right-10 top-0" >
+      <div className="w-[400px] h-screen absolute right-10 mt-64 top-32" >
         <div className='border border-gray-400 pt-0 rounded-xl  w-full h-fit my-auto  shadow-xl'>
           <canvas id='myChart'></canvas>
         </div>

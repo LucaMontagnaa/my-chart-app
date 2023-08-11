@@ -21,7 +21,7 @@ function Humedad() {
   return (
     <>
       {/* line chart */}
-      <div className="w-[500px] h-screen mx-auto my-auto absolute right-10 mt-64">
+      <div className="w-[400px] my-auto absolute right-10 mt-32">
         <div className='border border-gray-400 pt-0 rounded-xl  w-full h-fit my-auto  shadow-xl'>
           <canvas id='myChart2'class="custom-chart"></canvas>
         </div>
