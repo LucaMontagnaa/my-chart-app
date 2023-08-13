@@ -1,17 +1,19 @@
 import { useEffect } from "react"
 import { Chart } from "chart.js";
-function Humedad() {
+import styles from '@/styles/Home.module.css'
+
+function Humedad(props) {
   useEffect(() => {
     let ctx = document.getElementById('myChart2').getContext('2d');
     new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["0", "2", "4", "6", "8", "10", "12"],
+        labels: props.labels,
         datasets: [{
-          data: [5, 10, 15, 20, 25, 34, 35],
+          data: props.data,
           label: "Humedad",
-          borderColor: "green",
-          backgroundColor: "green",
+          borderColor: "rgb(53, 204, 141)",
+          backgroundColor: "rgb(53, 204, 141)",
           fill: false,
         }  
         ]
@@ -21,9 +23,9 @@ function Humedad() {
   return (
     <>
       {/* line chart */}
-      <div className="w-[400px] my-auto absolute right-10 mt-32">
-        <div className='border border-gray-400 pt-0 rounded-xl  w-full h-fit my-auto  shadow-xl'>
-          <canvas id='myChart2'class="custom-chart"></canvas>
+      <div className="w-[500px] my-auto absolute right-36 mt-52 top-0">
+        <div className={styles.ChartHumedad}>
+          <canvas id='myChart2'></canvas>
         </div>
       </div>
     </>

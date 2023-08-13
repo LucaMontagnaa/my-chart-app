@@ -1,17 +1,19 @@
 import { useEffect } from "react"
 import { Chart } from "chart.js";
-function Temperatura() {
+import styles from '@/styles/Home.module.css'
+
+function Temperatura(props) {
   useEffect(() => {
     let ctx = document.getElementById('myChart').getContext('2d');
     new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["0", "2", "4", "6", "8", "10", "12"],
-        datasets: [{
-          data: [5, 10, 15, 20, 25, 34, 35],
+          labels: props.labels,
+          datasets: [{
+          data: props.data,
           label: "Temperatura",
-          borderColor: "green",
-          backgroundColor: "green",
+          borderColor: "rgb(53, 204, 141)",
+          backgroundColor: "rgb(53, 204, 141)",
           fill: false,
         }
         ]
@@ -21,8 +23,8 @@ function Temperatura() {
   return (
     <>
       {/* line chart */}
-      <div className="w-[400px] h-screen absolute right-10 mt-64 top-32" >
-        <div className='border border-gray-400 pt-0 rounded-xl  w-full h-fit my-auto  shadow-xl'>
+      <div className="w-[500px] absolute right-36 mt-96 top-32" >
+        <div className={styles.ChartTemperatura}>
           <canvas id='myChart'></canvas>
         </div>
       </div>
