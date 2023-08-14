@@ -81,7 +81,7 @@
 .izquierda {
     padding-left: 100px;
     padding-top: 30px;
-
+    padding-bottom: 30px;
 }
 
 .cardRegistro {
@@ -114,16 +114,17 @@
     font-size: 40px;
     background-color: transparent;
     position: relative;
-    left: -10vh;
-
+    left: -8vh;
+    text-transform: uppercase;
 }
 
-.soleado {
+.camion {
     width: 100px;
     height: 100px;
     background-color: transparent;
     position: relative;
-    left: 10vh;
+    left: 5vh;
+    top: 1vh;
 }
 
 .cardGps {
@@ -184,19 +185,15 @@
 }
 
 .ChartTemperatura{
-   
-    padding-top: 0;
     border-radius: 1rem;
     background-color: #1C1C1C;
- 
+    padding: 5px;
 }
 
-.ChartHumedad {
-    
-    padding-top: 0;
+.ChartHumedad {  
     border-radius: 1rem;
     background-color: #1C1C1C;
-
+    padding: 5px;
 }
 
 .cardTiempo {
@@ -225,22 +222,40 @@
 }
 
 .textoTiempo {
-    font-size: 45px;
+    font-size: 55px;
     text-align: center;
     background-color: transparent;
     position: relative;
-    left: -20vh;
-    top: 7vh;
+    left: -16vh;
+    top: 6.5vh;
 }
 
 .reloj {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     background-color: transparent;
     position: relative;
     left: 15vh;
-    top: -12vh;
+    top: -13vh;
 }
+
+.containerTemperatura{
+    width: 500px;
+    position: absolute;
+    right: 150px;        
+    margin-top: 500px;
+    top: 24px;
+}
+
+.containerHumedad{
+    width: 500px;
+    position: absolute;
+    right: 150px;        
+    margin-top: 210px;
+    top: 28px;
+}
+
+
 
 
 

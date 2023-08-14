@@ -52,9 +52,9 @@ export default function Example({ data }) {
               <ul className={styles.list}>
                 <li className={styles.item}>
                   <div className={styles.cardRegistro}>
-                    <p style={fredoka.style} className={styles.tituloRegistro}>Numero de registro</p>
-                    <p style={fredoka.style} className={styles.textoRegistro}>N°1</p>
-                    <img className={styles.soleado} src="soleado.png" alt="" />
+                    <p style={fredoka.style} className={styles.tituloRegistro}>Recorrido del transporte</p>
+                    <p style={fredoka.style} className={styles.textoRegistro}>{data.idCam}</p>
+                    <img className={styles.camion} src="camion-de-reparto.png" alt="" />
                   </div>
                 </li>
 
@@ -70,7 +70,7 @@ export default function Example({ data }) {
                 <li className={styles.item}>
                   <div className={styles.cardTiempo}>
                     <p style={fredoka.style} className={styles.tituloTiempo}>Tiempo de medición</p>
-                    <p style={fredoka.style} className={styles.textoTiempo}>11:00</p>
+                    <p style={fredoka.style} className={styles.textoTiempo}> 12:00 </p>
                     <img className={styles.reloj} src="reloj-de-pared-2.png" alt="" />
                   </div>
                 </li>
@@ -118,8 +118,14 @@ export const getServerSideProps = async (context) => {
   }  
   return {
     props: {
-      data: { humedad: humedad, temperatura: temperatura, time: time, ubicacion: { latitud:datos[0].latitud, longitud:datos[0].longitud } }
-    
+      data: {
+        humedad: humedad,
+        temperatura: temperatura,
+        time: time,
+        ubicacion: { latitud: datos[0].latitud, longitud: datos[0].longitud },
+        idCam: datos[0].idCamion
+      }
+      
     }
   }
 }

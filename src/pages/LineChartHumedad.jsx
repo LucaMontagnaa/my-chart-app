@@ -12,8 +12,8 @@ function Humedad(props) {
         datasets: [{
           data: props.data,
           label: "Humedad",
-          borderColor: "rgb(53, 204, 141)",
-          backgroundColor: "rgb(53, 204, 141)",
+          borderColor: "rgb(95, 221, 168)",
+          backgroundColor: "rgb(95, 221, 168)",
           fill: false,
         }  
         ]
@@ -23,7 +23,7 @@ function Humedad(props) {
   return (
     <>
       {/* line chart */}
-      <div className="w-[500px] my-auto absolute right-36 mt-52 top-0">
+      <div className={styles.containerHumedad}>
         <div className={styles.ChartHumedad}>
           <canvas id='myChart2'></canvas>
         </div>

@@ -12,8 +12,8 @@ function Temperatura(props) {
           datasets: [{
           data: props.data,
           label: "Temperatura",
-          borderColor: "rgb(53, 204, 141)",
-          backgroundColor: "rgb(53, 204, 141)",
+          borderColor: "rgb(95, 221, 168)",
+          backgroundColor: "rgb(95, 221, 168)",
           fill: false,
         }
         ]
@@ -23,7 +23,7 @@ function Temperatura(props) {
   return (
     <>
       {/* line chart */}
-      <div className="w-[500px] absolute right-36 mt-96 top-32" >
+      <div className={styles.containerTemperatura}>
         <div className={styles.ChartTemperatura}>
           <canvas id='myChart'></canvas>
         </div>
