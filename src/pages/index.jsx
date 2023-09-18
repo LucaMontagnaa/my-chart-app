@@ -103,7 +103,7 @@ export default function Example({ data }) {
 
 export const getServerSideProps = async (context) => {
   const options = { method: 'GET' };
-  const res = await fetch("https://next-app-api.vercel.app/api/camiones/caba-lp/sensores", options)
+  const res = await fetch("https://next-app-api.vercel.app/api/camiones/caba-cor/sensores", options)
   const datos = await res.json()
   let humedad = [] 
   let temperatura = [] 
