@@ -86,7 +86,7 @@
         position: absolute;
         top: 10vh;
         width: 100%;
-        height: 200%;
+        height: 205%;
         color: white;
         
     }
@@ -110,7 +110,7 @@
         align-content: center;
         flex: 1;
         padding: 20px;
-        width: 30vw;
+        width: 50vw;
         height: 12vh;
         border-radius: 15px;
         background-color: #1C1C1C;
@@ -153,7 +153,7 @@
         align-items: center;
         align-content: center;
         padding: 20px;
-        width: 30vw;
+        width: 50vw;
         height: 12vh;
         border-radius: 15px;
         background-color: #1C1C1C;
@@ -194,27 +194,7 @@
         left: 20vh;
         top: -15vh;
     }
-    
-    .list {
-        list-style-type: none;
-    }
-    
-    .item {
-        margin: 30px;
-    }
-    
-    .ChartTemperatura{
-        border-radius: 1rem;
-        background-color: #1C1C1C;
-        padding: 5px;
-    }
-    
-    .ChartHumedad {  
-        border-radius: 1rem;
-        background-color: #1C1C1C;
-        padding: 5px;
-    }
-    
+
     .cardTiempo {
         display: flex;
         flex-direction: column;
@@ -222,7 +202,7 @@
         align-items: center;
         align-content: center;
         padding: 20px;
-        width: 30vw;
+        width: 50vw;
         height: 12vh;
         border-radius: 15px;
         background-color: #1C1C1C;
@@ -258,11 +238,33 @@
         top: -13vh;
     }
     
+    .list {
+        list-style-type: none;
+    }
+    
+    .item {
+        margin: 30px;
+    }
+    
+    .ChartTemperatura{
+        border-radius: 1rem;
+        background-color: #1C1C1C;
+        padding: 5px;
+    }
+    
+    .ChartHumedad {  
+        border-radius: 1rem;
+        background-color: #1C1C1C;
+        padding: 5px;
+    }
+    
+
+    
     .containerTemperatura{
         width: 500px;
         position: absolute;
         right: 150px;        
-        margin-top: 500px;
+        margin-top: 1090px;
         top: 24px;
     }
     
@@ -270,7 +272,7 @@
         width: 500px;
         position: absolute;
         right: 150px;        
-        margin-top: 210px;
+        margin-top: 800px;
         top: 28px;
     }
 }
@@ -522,7 +524,7 @@
         width: 500px;
         position: absolute;
         right: 150px;        
-        margin-top: 500px;
+        margin-top: 510px;
         top: 24px;
     }
     
