@@ -17,7 +17,7 @@ function Humedad(props) {
           fill: false,
         }  
         ]
-      },
+      }
     });
   }, [])
   return (

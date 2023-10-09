@@ -17,7 +17,7 @@ function Temperatura(props) {
           fill: false,
         }
         ]
-      },
+      }
     });
   }, [])
   return (
