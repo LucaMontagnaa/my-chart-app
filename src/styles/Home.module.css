@@ -75,7 +75,7 @@
     }
     
     .datos {
-        position: absolute;
+        position: flex;
         top: 10vh;
         width: 100%;
         height: 205%;
@@ -130,8 +130,8 @@
     }
     
     .camion {
-        width: 100px;
-        height: 100px;
+        width: 16vh;
+        height: 16vh;
         background-color: transparent;
         position: relative;
         left: -1vh;
@@ -140,10 +140,10 @@
     
     .cardGps {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
         align-content: center;
+        flex-direction: column;
+        flex: 1;
         padding: 20px;
         width: 60vw;
         height: 12vh;
@@ -156,36 +156,34 @@
     
     .tituloGps {
         background-color: transparent;
-        position: absolute;
-        top: 388px;
+        position: relative;
+        top: 5vh;
         text-align: center;
-        font-size: 25px;text-decoration: underline;
+        font-size: 25px;
+        text-decoration: underline;
         color: black;
     }
     
     .textoLatitud {   
-        font-size: 30px;
+        font-size: 20px;
         background-color: transparent;
         position: relative;
-        left: -10vh;
-        top: 11vh;
+        margin-top: ;
     }
     
     .textoLongitud {
-        font-size: 30px;
+        font-size: 20px;
         background-color: transparent;
         position: relative;
-        left: -10vh;
-        top: 2vh;
+        
     }
     
     .gps {
-        width: 80px;
-        height: 80px;
+        width: 15vh;
+        height: 15vh;
         background-color: transparent;
         position: relative;
-        left: 15vh;
-        top: -15vh;
+        
     }
 
     .cardTiempo {
@@ -201,7 +199,6 @@
         background-color: #1C1C1C;
         border: 5px solid rgb(95, 221, 168);
         border-top: 50px solid rgb(95, 221, 168);
-        left: -200px;
         margin-left: -15px;
         
     }
@@ -221,17 +218,15 @@
         text-align: center;
         background-color: transparent;
         position: relative;
-        left: -9vh;
-        top: 6.5vh;
+        
     }
     
     .reloj {
-        width: 75px;
-        height: 75px;
+        width: 12vh;
+        height: 12vh;
         background-color: transparent;
         position: relative;
-        left: 15vh;
-        top: -11vh;
+       
     }
     
     .list {
@@ -246,12 +241,16 @@
         border-radius: 1rem;
         background-color: #1C1C1C;
         padding: 5px;
+        align-items: center;  
+        justify-content: center; 
     }
     
     .ChartHumedad {  
         border-radius: 1rem;
         background-color: #1C1C1C;
         padding: 5px;
+        align-items: center;  
+        justify-content: center; 
     }
     
 
@@ -259,16 +258,19 @@
     .containerTemperatura{
         width: 400px;
         position: relative;
-        left: 12px;        
-        margin-top: 875px;
+        align-items: center;  
+        justify-content: center; 
+        margin-top: -40px;
+        margin-bottom: 20px;
         
     }
     
     .containerHumedad{
         width: 400px;
         position: relative;
-        left: 12px;        
-        margin-top: 20px;
+        align-items: center;  
+        justify-content: center;     
+        margin-bottom: 10px;
         
     }
 }
