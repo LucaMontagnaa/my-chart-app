@@ -69,7 +69,7 @@ export default function Example({ data }) {
 
                 <li className={styles.item}>
                   <div className={styles.cardTiempo}>
-                    <p style={fredoka.style} className={styles.tituloTiempo}>Peso</p>
+                    <p style={fredoka.style} className={styles.tituloTiempo}>Peso </p>
                     <p style={fredoka.style} className={styles.textoTiempo}> {data.peso} g </p>
                     <img className={styles.reloj} src="reloj-de-pared-2.png" alt="" />
                   </div>
