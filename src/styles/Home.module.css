@@ -107,7 +107,7 @@
         background-color: #1C1C1C;
         border: 5px solid rgb(95, 221, 168);
         border-top: 50px solid rgb(95, 221, 168);
-        margin-left: -9vh;
+        margin-left: -5vh;
     }
     
     .tituloRegistro {
@@ -115,7 +115,7 @@
         font-size: 23px;
         text-decoration: underline;
         color: black;
-        top: 32vh;
+        top: 27.5vh;
         
     }
     
@@ -139,6 +139,7 @@
         display: flex;
         justify-content: center;
         align-content: center;
+        align-items: center;
         flex-direction: column;
         flex: 1;
         padding: 20px;
@@ -148,7 +149,7 @@
         background-color: #1C1C1C;
         border: 5px solid rgb(95, 221, 168);
         border-top: 50px solid rgb(95, 221, 168);
-        margin-left: -9vh;
+        margin-left: -5vh;
     }
 
 
@@ -166,22 +167,24 @@
         font-size: 25px;
         background-color: transparent;
         position: relative;
-        margin-bottom: 2px;
+        margin-top: 40px;
+        right: 9vh;
     }
     
     .textoLongitud {
         font-size: 25px;
         background-color: transparent;
         position: relative;
-        margin-top: 2px;
+        margin-top: 4px;
+        right: 9vh;
     }
     
     .gps {
-        width: 14vh;
-        height: 14vh;
+        width: 12vh;
+        height: 12vh;
         position: relative;
-        left: 24vh;
-        bottom: 15vh;
+        bottom: 13vh;
+        left: 8vh;
     }
 
     .cardTiempo {
@@ -196,7 +199,7 @@
         background-color: #1C1C1C;
         border: 5px solid rgb(95, 221, 168);
         border-top: 50px solid rgb(95, 221, 168);
-        margin-left: -9vh;
+        margin-left: -5vh;
         
     }
     
@@ -207,8 +210,8 @@
         font-size: 25px;
         text-decoration: underline;
         color: black;
-        bottom: 12vh;
-        left: 15vh;
+        bottom: 11vh;
+        left: 13vh;
 
     }
     
@@ -262,7 +265,7 @@
         justify-content: center; 
         margin-top: -40px;
         margin-bottom: 20px;
-        
+        margin-left: 3vh;  
     }
     
     .containerHumedad{
@@ -271,7 +274,7 @@
         align-items: center;  
         justify-content: center;     
         margin-bottom: 10px;
-        
+        margin-left: 3vh;
     }
 }
   
