@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head'
 import Temperatura from './LineChartTemperatura.jsx'
 import Humedad from './LineChartHumedad'
@@ -6,6 +6,23 @@ import styles from '@/styles/Home.module.css'
 import Menu from './components/Menu.jsx'
 import Busqueda from './components/Busqueda'
 import { Fredoka } from 'next/font/google'
+import LoginModal from './components/loginModal';
+
+const Pop = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
+  return (
+    <div>
+      <a onClick={openModal} className={styles.log}>Log In</a>
+      <LoginModal isOpen={isModalOpen} closeModal={closeModal} />
+    </div>
+  );
+};
+
+
 
 const fredoka = Fredoka({ subsets: ['latin'], weight: '300', width: 110 })
 
@@ -35,8 +52,9 @@ export default function Example({ data }) {
         </div>
           
         <div className={styles.right}>
-          <a className={styles.log} href="">Log In</a>
-          <a href="" className={styles.lupa}><Busqueda width={24} height={23}/></a>
+          <div> <Pop /> </div>
+            <a href="" className={styles.lupa}><Busqueda width={24} height={23} /></a>
+          
         </div>
 
       </div>
